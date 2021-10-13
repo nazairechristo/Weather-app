@@ -5,9 +5,107 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background: linear-gradient(rgb(15, 15, 15), rgb(1, 5, 31));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  font-family: 'Poppins';
 }
+
+#logo{
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+
+}
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  padding: 2px;
+  margin: 20px 0;
+}
+
+input{
+  border: none;
+  width: 195px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(204, 252, 255, 0.63);
+  padding-left: 10px;
+  
+}
+
+
+
+input::placeholder{
+  padding:  0 8px;
+}
+button{
+  cursor: pointer;
+  width: 80px;
+  height: 34px;
+  border:none;
+  background-color: rgb(90, 156, 90);
+  border-radius: 10px;
+  font-family: 'Poppins';
+}
+
+.weather-container{
+  padding: 5px;
+  width: 290px;
+  height: auto;
+  background-color: rgba(204, 252, 255, 0.63);
+  border-radius: 32px;
+  box-shadow: 1px 1px 5px 1px rgb(31, 30, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+h4{margin-left: -20px;
+  margin-right: 2px;
+  height: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  position: relative;
+}
+
+#region{
+  position: absolute;
+  top: 0;
+  padding: 3px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  background-color: rgb(245, 96, 10);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+#temp{
+  font-size: 80px;
+  font-weight: 600;
+}
+#desc-img{
+  font-size: 18px;
+}
+#desc-text{
+  padding: 8px 0;
+}
+
+
+
+
